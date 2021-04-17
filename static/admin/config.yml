@@ -10,10 +10,9 @@ collections:
     label: 'Blog'
     folder: 'content/blog'
     create: true
-    slug: 'index'
+    slug: "{{slug}}"
     media_folder: ''
     public_folder: ''
-    path: '{{title}}/index'
     fields:
       - { label: "Key", name: "templateKey", widget: "hidden", default: "blog-post"}
       - { label: 'Title', name: 'title', widget: 'string' }

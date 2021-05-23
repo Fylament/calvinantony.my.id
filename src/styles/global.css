@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.a div{
+  min-height: 100vh;
+  font-family: oswald !important;
+  display: block;
+  color: #ffc300;
+}
+
+.a div h1{
+  font-family: oswald !important;
+  font-weight: normal;
+  font-size: 9vh !important;
+  position: absolute;
+  top: 35%;
+}
+
+.a div span{
+  font-size: 4.5vh !important;
+  position: absolute;
+  top: 45%;
+  line-height: 100%;
+  width: 65%
+}
+
+.next-button{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  text-align: center;
+}
+
+
+.next-button *{
+  color: #ffc300;
+  position: absolute;
+  top: 90%;
+}
+
+.next-button a{
+  clip-path: polygon(50% 37%, 0 0, 100% 0);
+  background-color: #ffc300;
+}
+
+
+.next-button a:hover{
+  margin-top: 5px
+}
+
+
+
+.b {
+    background-color: green !important;
+    height: 10em !important;
+    font-family: sans-serif !important;
+    font-size: 5em !important;
+    display: block;
+  }
+
+.c {
+    background-color: red !important;
+    height: 10em !important;
+    font-family: sans-serif !important;
+    font-size: 5em !important;
+    display: block;
+}
+
+.d {
+  min-height: 10em !important;
+  font-family: sans-serif !important;
+  font-size: 5em !important;
+  display: block;
+}
+
+
+html,
+body{
+  height: 100%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+body{
+  position: relative;
+}

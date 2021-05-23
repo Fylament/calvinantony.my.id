@@ -1,0 +1,29 @@
+
+.slider::-webkit-slider-thumb{
+    width: 1vh!important;
+    height: 1vh!important;
+    border-radius: 50%!important;
+    background-color: #ffc300!important;
+  }
+
+.slider::-moz-range-thumb {
+    background: #ffc300!important;
+    border-radius: 50%!important;
+    border:none;
+}
+
+.slider::-moz-range-thumb:hover {
+    transition: 1000ms;
+    transform: scale(120%);
+}
+
+
+.slider::-moz-range-track{
+    background: #ffc300!important;
+    opacity: 50%;
+}
+
+
+.slider{
+    background-color: transparent;
+}

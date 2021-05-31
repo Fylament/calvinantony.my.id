@@ -11,7 +11,6 @@
  
  import Header from "./header"
  import "./layout.css"
- import Slider from "./slider"
  
  const Layout = ({ children }) => {
    const data = useStaticQuery(graphql`
@@ -34,7 +33,6 @@
        >
          <main>
            {children}
-           <Slider/>
          </main>
          
          <footer

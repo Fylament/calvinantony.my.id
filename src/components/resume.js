@@ -49,7 +49,7 @@ BlogRoll.propTypes = {
 export default () => (
     <StaticQuery
       query={graphql`
-        query BlogRollQuery {
+        query resumeQuery {
           allMarkdownRemark(
             sort: { order: DESC, fields: [frontmatter___date] }
             filter: { frontmatter: { templateKey: { in: ["blog-post", "guides-post", "review-post", "news-post"] } } }

@@ -3,3 +3,6 @@
 @tailwind utilities;
 
 
+.featured img{
+    transform: translateY(-50%);
+}

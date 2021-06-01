@@ -12,9 +12,10 @@ class BlogRoll extends React.Component{
         return(
             <div className="">
                 {posts && posts.map(({ node: post }) => (
-                    <div key={post.id} className="mb-5 grid grid-cols-4">
+                    <div key={post.id} className="mb-5">
+                        <Link to={post.fields.slug}>
                         {post.frontmatter.featuredimage ? (
-                            <div className="featured-thumbnail w-full col-span-1 md:featured h-20 overflow-hidden">
+                            <div className="featured-thumbnail featured w-6/8 max-h-40 lg:max-h-64 md:max-h-40 xl:max-h-80 overflow-hidden col-span-1 ">
                               <PreviewCompatibleImage
                                 imageInfo={{
                                   image: post.frontmatter.featuredimage,
@@ -23,7 +24,8 @@ class BlogRoll extends React.Component{
                               />
                             </div>
                           ) : null}
-                        <div className="col-span-3 ml-3">
+                        </Link>
+                        <div className="">
                           <Link to={post.fields.slug}>
                             <h2 className="font-oswald text-base font-normal text-primary mb-0">{post.frontmatter.title}</h2>
                           </Link>
@@ -49,8 +51,9 @@ BlogRoll.propTypes = {
 export default () => (
     <StaticQuery
       query={graphql`
-        query BlogRollQuery {
+        query featuredBlogQuery {
           allMarkdownRemark(
+            limit:1
             sort: { order: DESC, fields: [frontmatter___date] }
             filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
           ) {

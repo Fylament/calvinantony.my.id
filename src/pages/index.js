@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import LandingHero from "../components/landingHero"
 import BlogRoll from "../components/blogRoll"
+import FeaturedBlog from "../components/featuredBlog"
 import Resume from "../components/resume"
 
 const IndexPage = ({data}) => (
@@ -21,30 +22,20 @@ const IndexPage = ({data}) => (
         style={{ marginBottom: `1.45rem` }}
       />  */}
       <div className="w-full h-full">
-        <div className="container mx-auto px-5 grid-cols-2 grid">
-            <div className="blog col-span-1 mx-5">
+        <div className="container mx-auto px-5 grid-cols-12 grid">
+            <div className="blog col-span-12 md:col-span-7 mx-5">
               <h1 className="font-oswald text-xl text-white font-light">Blog</h1>
+              <FeaturedBlog/>
               <BlogRoll/>
             </div>
-            <div className="projects col-span-1 mx-5">
+            <div className="projects col-span-12 md:col-span-7 mx-5">
               <h1 className="font-oswald text-xl text-white font-light">Projects</h1>
-              <BlogRoll/>
-            </div>
-            <div className="blog col-span-1 mx-5">
-              <h1 className="font-oswald text-xl text-white font-light">Resume</h1>
-              <Resume/>
-            </div>
-            <div className="blog col-span-1 mx-5">
-              <h1 className="font-oswald text-xl text-white font-light">Contact</h1>
+              <FeaturedBlog/>
               <BlogRoll/>
             </div>
         </div>
       </div>
 
-    </div>
-    
-    <div>
-      
     </div>
   </Layout>
 )

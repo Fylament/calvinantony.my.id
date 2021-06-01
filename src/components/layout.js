@@ -11,6 +11,7 @@
  
  import Header from "./header"
  import "./layout.css"
+ import Footer from "./footer"
  
  const Layout = ({ children }) => {
    const data = useStaticQuery(graphql`
@@ -35,11 +36,8 @@
            {children}
          </main>
          
-         <footer
-           style={{
-             marginTop: `2rem`,
-           }}
-         >
+         <footer>
+           <Footer></Footer>
          </footer>
        </div>
      </>

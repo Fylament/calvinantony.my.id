@@ -19,7 +19,7 @@ const IndexPage = ({data}) => (
         alt="A Gatsby astronaut"
         style={{ marginBottom: `1.45rem` }}
       />  */}
-      <div className="w-full h-96">
+      <div className="w-full h-full">
         <div className="container mx-auto px-5 grid-cols-2 grid">
             <div className="blog col-span-1 mx-5">
               <h1 className="font-oswald text-xl text-white font-light">Blog</h1>

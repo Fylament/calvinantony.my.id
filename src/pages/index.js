@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import LandingHero from "../components/landingHero"
 import BlogRoll from "../components/blogRoll"
+import Resume from "../components/resume"
 
 const IndexPage = ({data}) => (
   <Layout>
@@ -29,7 +30,14 @@ const IndexPage = ({data}) => (
               <h1 className="font-oswald text-xl text-white font-light">Projects</h1>
               <BlogRoll/>
             </div>
-            
+            <div className="blog col-span-1 mx-5">
+              <h1 className="font-oswald text-xl text-white font-light">Resume</h1>
+              <Resume/>
+            </div>
+            <div className="blog col-span-1 mx-5">
+              <h1 className="font-oswald text-xl text-white font-light">Contact</h1>
+              <BlogRoll/>
+            </div>
         </div>
       </div>
 

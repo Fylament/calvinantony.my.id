@@ -10,8 +10,10 @@ class BlogRoll extends React.Component{
         return(
             <div className="">
                 {posts && posts.map(({ node: post }) => (
-                    <div key={post.id} className="mb-5">
-                        <h2 className="font-oswald text-base font-normal text-primary mb-0">{post.frontmatter.title}</h2>
+                    <div key={post.id} className="mb-5 border p-3 border-transparent rounded-lg ring-yellow-500 ring-4 ring-opacity-20 ring-offset-1 ring-offset-yellow-500">
+                        <Link to={post.fields.slug}>
+                          <h2 className="font-oswald text-base font-normal text-primary mb-0">{post.frontmatter.title}</h2>
+                        </Link>
                         <p className="font-open-sans text-xs font-light text-white mb-0">{post.excerpt}</p>
                     </div>
                 ))}

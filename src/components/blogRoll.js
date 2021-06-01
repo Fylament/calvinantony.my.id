@@ -1,6 +1,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link, graphql, StaticQuery } from 'gatsby'
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 
 class BlogRoll extends React.Component{
@@ -11,6 +12,7 @@ class BlogRoll extends React.Component{
             <div className="">
                 {posts && posts.map(({ node: post }) => (
                     <div key={post.id} className="mb-5 border p-3 border-transparent rounded-lg ring-yellow-500 ring-4 ring-opacity-20 ring-offset-1 ring-offset-yellow-500">
+                        <GatsbyImage image={getImage(post.frontmatter.featuredimage)}></GatsbyImage>
                         <Link to={post.fields.slug}>
                           <h2 className="font-oswald text-base font-normal text-primary mb-0">{post.frontmatter.title}</h2>
                         </Link>
@@ -50,6 +52,13 @@ export default () => (
                   title
                   description
                   date(formatString: "MMMM D, YYYY")
+                  featuredimage {
+                    childImageSharp {
+                      fluid(quality: 100) {
+                        ...GatsbyImageSharpFluid
+                      }
+                    }
+                  }
                 }
               }
             }

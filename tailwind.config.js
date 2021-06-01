@@ -4,10 +4,12 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        'sage-green': '#9AAB89',
+        'bg': '#000814',
+        'primary': '#ffc300',
       },
       fontFamily: {
-        'oswald': ['oswald', 'serif'],
+        'oswald': ['oswald'],
+        'open-sans': ['open sans'],
       }
     },
   },

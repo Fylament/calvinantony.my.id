@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from 'prop-types'
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 export default function BlogPost({ data }) {
@@ -12,6 +13,15 @@ export default function BlogPost({ data }) {
     </Layout>
   )
 }
+
+
+BlogPost.propTypes = {
+  data: PropTypes.shape({
+    markdownRemark: PropTypes.object,
+  }),
+}
+
+
 export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {

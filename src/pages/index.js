@@ -9,7 +9,7 @@ import BlogRoll from "../components/blogRoll"
 const IndexPage = ({data}) => (
   <Layout>
     <SEO title="Home" />
-    <div className="bg-sage-green h-full w-full">
+    <div className="bg-bg h-full w-full">
       <LandingHero/>
       {/* <StaticImage
         src="../images/gatsby-astronaut.png"

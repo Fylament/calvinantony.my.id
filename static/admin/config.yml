@@ -11,8 +11,6 @@ collections:
     folder: 'content/blog'
     create: true
     slug: "{{slug}}"
-    media_folder: ''
-    public_folder: ''
     fields:
       - { label: "Key", name: "templateKey", widget: "hidden", default: "blog-post"}
       - { label: 'Title', name: 'title', widget: 'string' }

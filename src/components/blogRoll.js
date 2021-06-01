@@ -2,7 +2,7 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Link, graphql, StaticQuery } from 'gatsby'
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import PreviewCompatibleImage from "./previewCompatibleImage"
+import PreviewCompatibleImage from "./PreviewCompatibleImage"
 
 
 class BlogRoll extends React.Component{

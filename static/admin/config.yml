@@ -19,6 +19,19 @@ collections:
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: "Tags", name: "tags", widget: "list"}
+  - name: 'projects'
+    label: 'Projects'
+    folder: 'content/projects'
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Key", name: "templateKey", widget: "hidden", default: "project-post"}
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: "Featured Image", name: "featuredimage", widget: image}
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: "Tags", name: "tags", widget: "list"}
   - name: "pages"
     label: "Pages"
     files:

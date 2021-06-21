@@ -14,13 +14,8 @@ class BlogRoll extends React.Component{
                 {posts && posts.map(({ node: post }) => (
                     <div key={post.id} className="mb-5 grid grid-cols-4">
                         {post.frontmatter.featuredimage ? (
-                            <div className="featured-thumbnail w-full col-span-1 md:featured h-20 overflow-hidden">
-                              <PreviewCompatibleImage
-                                imageInfo={{
-                                  image: post.frontmatter.featuredimage,
-                                  alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-                                }}
-                              />
+                            <div className="featured-thumbnail w-full col-span-1 md:featured">
+                              <GatsbyImage className="flex h-20 overflow-hidden" imgClassName="justify-center content-center" image={getImage(post.frontmatter.featuredimage)}></GatsbyImage>
                             </div>
                           ) : null}
                         <div className="col-span-3 ml-3">
@@ -67,9 +62,7 @@ export default () => (
                   date(formatString: "MMMM D, YYYY")
                   featuredimage {
                     childImageSharp {
-                      fluid(quality: 100) {
-                        ...GatsbyImageSharpFluid
-                      }
+                      gatsbyImageData
                     }
                   }
                 }

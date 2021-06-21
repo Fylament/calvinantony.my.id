@@ -3,6 +3,25 @@
 @tailwind utilities;
 
 
+:root {
+    --bg: #000814;
+    --primary: #ffc300;
+  }
+
+/* 
 .featured img{
-    transform: translateY(-50%);
+    position:absolute;
+    top:50%;
+} */
+
+#menu-toggle:checked + #menu{
+    display: block;
 }
+
+.landing-bg div {
+    background: -webkit-linear-gradient(rgba(0, 8, 20, 0.3), var(--bg)) left;
+}
+.featured-bg div {
+    background: -webkit-linear-gradient(transparent, var(--bg)) left;
+    background: linear-gradient(transparent, var(--bg)) left; 
+  }

@@ -25,13 +25,9 @@
    `)
  
    return (
-     <>
-       {/* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */}
-       <div
-         style={{
-           margin: `0 auto`,
-         }}
-       >
+     <div className="mt-0">
+       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+       <div>
          <main>
            {children}
          </main>
@@ -40,7 +36,7 @@
            <Footer></Footer>
          </footer>
        </div>
-     </>
+     </div>
    )
  }
  

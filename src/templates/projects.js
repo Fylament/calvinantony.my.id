@@ -3,16 +3,12 @@ import { Link, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import LandingHero from "../components/landingHero"
 import BlogRoll from "../components/blogRoll"
-import FeaturedBlog from "../components/featuredBlog"
-import Resume from "../components/resume"
 
-const IndexPage = ({data}) => (
+const Project = ({data}) => (
   <Layout>
     <SEO title="Home" />
-    <div className="bg-bg h-full w-full">
-      <LandingHero/>
+    <div className="bg-bg h-full w-full pt-10">
       {/* <StaticImage
         src="../images/gatsby-astronaut.png"
         width={300}
@@ -25,22 +21,15 @@ const IndexPage = ({data}) => (
         <div className="container mx-auto px-5 grid-cols-12 grid">
             <div className="blog col-span-12 lg:col-span-9 xl:col-span-7 mx-5">
               <h1 className="font-oswald text-xl text-white font-light">Blog</h1>
-              <FeaturedBlog/>
-              <BlogRoll/>
-            </div>
-            <div className="projects col-span-12 md:col-span-7 mx-5">
-              <h1 className="font-oswald text-xl text-white font-light">Projects</h1>
-              <FeaturedBlog/>
               <BlogRoll/>
             </div>
         </div>
       </div>
-
     </div>
   </Layout>
 )
 
-export default IndexPage
+export default Project
 
 export const query = graphql`
   query {

@@ -6,6 +6,8 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "gatsby": "^3.2.1",
+    "gatsby-awesome-pagination": "^0.3.8",
+    "gatsby-background-image": "^1.5.3",
     "gatsby-cli": "^3.3.0",
     "gatsby-image": "^3.6.0",
     "gatsby-plugin-gatsby-cloud": "^2.2.0",

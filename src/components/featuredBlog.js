@@ -15,17 +15,12 @@ class BlogRoll extends React.Component{
                     <div key={post.id} className="mb-5">
                         <Link to={post.fields.slug}>
                         {post.frontmatter.featuredimage ? (
-                            <div className="featured-thumbnail featured w-6/8 max-h-40 lg:max-h-64 md:max-h-40 xl:max-h-80 overflow-hidden col-span-1 ">
-                              <PreviewCompatibleImage
-                                imageInfo={{
-                                  image: post.frontmatter.featuredimage,
-                                  alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-                                }}
-                              />
+                            <div className="featured-thumbnail featured relative col-span-1 ">
+                              <GatsbyImage className="flex overflow-hidden w-6/8 md:h-80 h-52" imgClassName="justify-center content-center" image={getImage(post.frontmatter.featuredimage)}></GatsbyImage>
                             </div>
                           ) : null}
                         </Link>
-                        <div className="">
+                        <div className="pt-3">
                           <Link to={post.fields.slug}>
                             <h2 className="font-oswald text-base font-normal text-primary mb-0">{post.frontmatter.title}</h2>
                           </Link>
@@ -59,7 +54,7 @@ export default () => (
           ) {
             edges {
               node {
-                excerpt(pruneLength: 70)
+                excerpt(pruneLength: 140)
                 id
                 fields {
                   slug
@@ -70,9 +65,9 @@ export default () => (
                   date(formatString: "MMMM D, YYYY")
                   featuredimage {
                     childImageSharp {
-                      fluid(quality: 100) {
-                        ...GatsbyImageSharpFluid
-                      }
+                      gatsbyImageData(
+                        quality:100
+                      )
                     }
                   }
                 }

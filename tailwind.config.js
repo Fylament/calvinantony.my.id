@@ -10,6 +10,9 @@ module.exports = {
       fontFamily: {
         'oswald': ['oswald'],
         'open-sans': ['open sans'],
+      },
+      fontSize: {
+        'xxs': '.625rem',
       }
     },
   },

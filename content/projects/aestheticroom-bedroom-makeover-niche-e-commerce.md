@@ -23,3 +23,8 @@ The rough representation of our customer profile are as follows:
 ### Marketing
 
 <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@aestheticroom.co/video/6980574602930048257" data-video-id="6980574602930048257" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@aestheticroom.co" href="https://www.tiktok.com/@aestheticroom.co">@aestheticroom.co</a> <p>Sunset lamp 🌻 <a title="aestheticroom" target="_blank" href="https://www.tiktok.com/tag/aestheticroom">##aestheticroom</a> <a title="roomdecor" target="_blank" href="https://www.tiktok.com/tag/roomdecor">##roomdecor</a> <a title="roommakeover" target="_blank" href="https://www.tiktok.com/tag/roommakeover">##roommakeover</a> <a title="bedroommakeover" target="_blank" href="https://www.tiktok.com/tag/bedroommakeover">##bedroommakeover</a> <a title="aestheticbedroom" target="_blank" href="https://www.tiktok.com/tag/aestheticbedroom">##aestheticbedroom</a></p> <a target="_blank" title="♬ Bling Bling Big Apple - Official Sound Studio" href="https://www.tiktok.com/music/Bling-Bling-Big-Apple-6859295005119350786">♬ Bling Bling Big Apple - Official Sound Studio</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+
+<iframe width="1680" height="690" 
+src="https://www.youtube.com/embed/DyY9Wpfajqo" frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+gyroscope; picture-in-picture" allowfullscreen></iframe>

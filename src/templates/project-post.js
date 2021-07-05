@@ -6,9 +6,11 @@ export default function ProjectPost({ data }) {
   const post = data.markdownRemark
   return (
     <Layout>
-      <div>
-        <h1>{post.frontmatter.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      <div className="bg-bg">
+        <div className="container mx-auto  lg:px-60 m:px-20 px-7 py-10">
+          <h1 className="font-oswald text-primary">{post.frontmatter.title}</h1>
+          <div className="font-open-sans text-white text-smaller text-justify" dangerouslySetInnerHTML={{ __html: post.html }} />
+        </div>
       </div>
     </Layout>
   )

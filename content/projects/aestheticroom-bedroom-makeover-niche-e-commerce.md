@@ -1,11 +1,11 @@
 ---
 templateKey: project-post
 title: "Aestheticroom: Bedroom Makeover Niche E-commerce"
-featuredimage: /img/screenshot-43-.png
+featuredimage: /img/1-yuq4zlbvc_sw0nqa4abtua.png
 date: 2021-07-05T10:38:03.643Z
 description: test
 ---
-![](/img/u9aa6d087f7254f59839c648fed4a96a8h.webp "Landing Page for Aestheticroom")
+![](/img/1-yuq4zlbvc_sw0nqa4abtua.png "Landing Page for Aestheticroom")
 
 [Aestheticroom](https://www.aestheticroom.co) is an e-commerce project targeting bedroom decor enthusiasts
 
